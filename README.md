@@ -34,6 +34,12 @@ Profile Screeen :
 
 
 ============================
+
+ToDo (Working on)
+==========
++ Working on Remote images using AFNetworking
++ Edit/Delete Cell
+
 <h1>Require</h1>
 OSX 10.9.3 and Xcode 6.x (beta for now)
 
