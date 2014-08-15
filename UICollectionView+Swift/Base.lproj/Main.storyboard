@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1r-Dr-tLM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--Album View Controller - Album-->
+        <scene sceneID="8rY-ks-nqO">
+            <objects>
+                <collectionViewController id="UwL-co-tjh" customClass="AlbumViewController" customModule="UICollectionView_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Kqb-Jm-RPa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.73333334920000004" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bPa-jV-TYr">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="yll-Sh-3QK" customClass="AlbumCell" customModule="UICollectionView_Swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dny-te-SEF">
+                                            <rect key="frame" x="11" y="13" width="75" height="60"/>
+                                        </imageView>
+                                        <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close.png" translatesAutoresizingMaskIntoConstraints="NO" id="PLE-Ff-23P">
+                                            <rect key="frame" x="77" y="0.0" width="21" height="22"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-tv-0fO">
+                                            <rect key="frame" x="5" y="79" width="90" height="21"/>
+                                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="AlbumImage" destination="dny-te-SEF" id="jBB-PK-Oxn"/>
+                                    <outlet property="CloseImage" destination="PLE-Ff-23P" id="8g2-Rx-aop"/>
+                                    <segue destination="npt-vj-XHX" kind="show" id="f14-zx-lYj"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="UwL-co-tjh" id="UPB-0x-FAb"/>
+                            <outlet property="delegate" destination="UwL-co-tjh" id="IsA-bh-KW7"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Album" id="HHM-SM-H87">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="v6A-68-FXa">
+                            <connections>
+                                <action selector="EditAlbumPressed:" destination="UwL-co-tjh" id="TAL-6n-8N8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gp5-1d-VqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="384"/>
+        </scene>
+        <!--Profile Controller-->
+        <scene sceneID="8eq-RS-zCm">
+            <objects>
+                <viewController id="npt-vj-XHX" customClass="ProfileController" customModule="UICollectionView_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rAd-HN-sMo"/>
+                        <viewControllerLayoutGuide type="bottom" id="shb-e9-cTO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Bk-wo-11b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banner2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t8t-IO-2UP">
+                                <rect key="frame" x="0.0" y="65" width="320" height="250"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="c.png" translatesAutoresizingMaskIntoConstraints="NO" id="wcm-T4-wQC">
+                                <rect key="frame" x="110" y="259" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.57647061347961426" green="0.83137261867523193" blue="0.81960791349411011" alpha="1" colorSpace="deviceRGB"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deG-eD-NNW">
+                                <rect key="frame" x="47" y="388" width="226" height="36"/>
+                                <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="45"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I make systems that encourage typing and thinking (Blogger, Twitter, Medim) @johndoe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="FjU-IV-PIb">
+                                <rect key="frame" x="20" y="439" width="280" height="71"/>
+                                <fontDescription key="fontDescription" name="GurmukhiMN" family="Gurmukhi MN" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CPt-jr-lQ7"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="BannerImage" destination="t8t-IO-2UP" id="4Pg-rj-WlW"/>
+                        <outlet property="ProfileImage" destination="wcm-T4-wQC" id="I59-T1-23J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKl-9C-wJ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1077" y="384"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nMh-mg-AXh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J1r-Dr-tLM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uig-fg-IJW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UwL-co-tjh" kind="relationship" relationship="rootViewController" id="rPw-dr-CbZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PML-dz-pIk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner2.jpg" width="1680" height="1050"/>
+        <image name="c.png" width="512" height="512"/>
+        <image name="close.png" width="256" height="256"/>
+    </resources>
+</document>
