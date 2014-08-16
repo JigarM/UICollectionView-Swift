@@ -19,6 +19,7 @@ Simple Tests of Swift Language (no Objective-C)
 ### App Previews
 ====================
 
+<p align="center" >
 Appicon :
 
 ![](http://i1282.photobucket.com/albums/a534/jigarm_0809/iOSSimulatorScreenShot15-Aug-201481655am_zps741fc965.png)
@@ -27,6 +28,7 @@ UICollectionView :
 
 ![](http://i1282.photobucket.com/albums/a534/jigarm_0809/iOSSimulatorScreenShot15-Aug-201481807am_zps447269ee.png)
 
+</p>
 Profile Screeen : 
 
 ![](http://i1282.photobucket.com/albums/a534/jigarm_0809/iOSSimulatorScreenShot15-Aug-201481637am_zps76d18ee0.png)
