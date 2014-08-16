@@ -40,6 +40,33 @@ ToDo (Working on)
 + Working on Remote images using AFNetworking
 + Edit/Delete Cell
 
+
+## Edit/Delete Cell : 
+
+### Objectie C : 
+
+```objective-c
+for(AlbumCell *cell in self.collectionView.visibleCells)
+{
+          NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+          if ([indexPath row] != (dataArray.count - 1)){
+                    //[cell.closeButton setHidden:NO];
+                    cell.nameLbl.text = "Jigar M"
+          }
+}
+```
+### Swift
+```swift
+for item: AnyObject in self.collectionView.visibleCells(){
+          var indexpath : NSIndexPath = self.collectionView.indexPathForCell(item as AlbumCell)
+          var cell : AlbumCell = self.collectionView.cellForItemAtIndexPath(indexpath) as AlbumCell
+          
+          // Get Label
+          var lbl : UILabel = cell.viewWithTag(101) as UILabel
+          lbl.text = "Jigar M"
+}
+```
+
 <h1>Require</h1>
 OSX 10.9.3 and Xcode 6.x (beta for now)
 
