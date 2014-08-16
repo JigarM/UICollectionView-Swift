@@ -81,6 +81,10 @@ This project will highlight a few of the core language features about Swift, but
 * [__Swift Language Highlights by Matt Galloway__](http://www.raywenderlich.com/73997/swift-language-highlights)
 
 
+###Development
+
+* [Jigar Maheshwar](http://twitter.com/jigar0809)
+
 ## License
 
           The MIT License (MIT)
