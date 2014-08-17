@@ -28,6 +28,7 @@ https://github.com/JigarM/Swift-Tutorials
 <a href="http://s1282.photobucket.com/user/jigarm_0809/media/CollectionView_zps59d7aedf.gif.html" target="_blank"><img src="http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif" border="0" alt=" photo CollectionView_zps59d7aedf.gif"/></a>
 </p>
 
+
 ToDo (Working on)
 ==========
 + Working on Remote images using AFNetworking
@@ -60,11 +61,10 @@ for item: AnyObject in self.collectionView.visibleCells(){
 }
 ```
 
-# Require
+## Require
 OSX 10.9.3 and Xcode 6.x (beta for now)
 
-# Swift
-=======
+## Swift
 
 This project will highlight a few of the core language features about Swift, but I would read through these documents, I found them useful to learn more about Swift and understanding teh structure and syntax of the language:
 
@@ -74,7 +74,7 @@ This project will highlight a few of the core language features about Swift, but
 * [__Swift Language Highlights by Matt Galloway__](http://www.raywenderlich.com/73997/swift-language-highlights)
 
 
-# Development
+# Author
 
 * [Jigar Maheshwari](http://twitter.com/jigar0809)
 
