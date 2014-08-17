@@ -22,7 +22,7 @@ Simple Tests of Swift Language (no Objective-C)
 Hows Flow looks like ?: 
 
 <p align="center">
-![](http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif)
+<a href="http://s1282.photobucket.com/user/jigarm_0809/media/CollectionView_zps59d7aedf.gif.html" target="_blank"><img src="http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif" border="0" alt=" photo CollectionView_zps59d7aedf.gif"/></a>
 </p>
 
 Appicon :
