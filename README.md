@@ -3,6 +3,11 @@ UICollectionView-Swift
 
 Sample Swift Project using UICollectionView + Swift
 
+Check My Swift Samples : 
+=========================
+https://github.com/JigarM/Swift-Tutorials
+
+
 Simple Tests of Swift Language (no Objective-C)
 ==================================================
 
