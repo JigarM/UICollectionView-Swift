@@ -8,7 +8,7 @@ Check My Swift Samples :
 https://github.com/JigarM/Swift-Tutorials
 
 
-Simple Tests of Swift Language (no Objective-C)
+## Simple Tests of Swift Language (no Objective-C)
 ==================================================
 
 + Methods & Properties
@@ -24,7 +24,7 @@ Simple Tests of Swift Language (no Objective-C)
 App Previews
 ====================
 
-# Hows Flow looks like ?: 
+## Hows Flow looks like ?: 
 
 <p align="center">
 <a href="http://s1282.photobucket.com/user/jigarm_0809/media/CollectionView_zps59d7aedf.gif.html" target="_blank"><img src="http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif" border="0" alt=" photo CollectionView_zps59d7aedf.gif"/></a>
