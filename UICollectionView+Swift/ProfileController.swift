@@ -11,17 +11,17 @@ import QuartzCore
 
 class ProfileController: UIViewController {
 
-    @IBOutlet var BannerImage : UIImageView
-    @IBOutlet var ProfileImage : UIImageView
+    @IBOutlet var BannerImage : UIImageView!
+    @IBOutlet var ProfileImage : UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         //1. Circule profile picture
-        var layer:CALayer = self.ProfileImage.layer!
-        layer.cornerRadius = self.ProfileImage.frame.size.width / 2
-        layer.borderWidth = 3.5
-        layer.borderColor = UIColor.whiteColor().CGColor
+        //var layer : CALayer = self.ProfileImage?.layer
+        self.ProfileImage.layer.cornerRadius = self.ProfileImage.frame.size.width / 2
+        self.ProfileImage.layer.borderWidth = 3.5
+        self.ProfileImage.layer.borderColor = UIColor.whiteColor().CGColor
         self.ProfileImage.clipsToBounds = true
         
         

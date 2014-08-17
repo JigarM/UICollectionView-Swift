@@ -9,7 +9,7 @@
 import UIKit
 
 class AlbumCell: UICollectionViewCell {
-    @IBOutlet var AlbumImage : UIImageView
-    @IBOutlet var CloseImage : UIImageView
+    @IBOutlet var AlbumImage : UIImageView?
+    @IBOutlet var CloseImage : UIButton?
     
 }

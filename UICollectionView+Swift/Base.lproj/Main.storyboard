@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1r-Dr-tLM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="J1r-Dr-tLM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
     </dependencies>
     <scenes>
-        <!--Album View Controller - Album-->
+        <!--Album-->
         <scene sceneID="8rY-ks-nqO">
             <objects>
                 <collectionViewController id="UwL-co-tjh" customClass="AlbumViewController" customModule="UICollectionView_Swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,15 +29,18 @@
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dny-te-SEF">
                                             <rect key="frame" x="11" y="13" width="75" height="60"/>
                                         </imageView>
-                                        <imageView hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="close.png" translatesAutoresizingMaskIntoConstraints="NO" id="PLE-Ff-23P">
-                                            <rect key="frame" x="77" y="0.0" width="21" height="22"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-tv-0fO">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="John Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f88-tv-0fO">
                                             <rect key="frame" x="5" y="79" width="90" height="21"/>
                                             <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="13"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button hidden="YES" opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKi-VF-E8h">
+                                            <rect key="frame" x="74" y="4" width="21" height="21"/>
+                                            <state key="normal" image="close.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -45,7 +48,7 @@
                                 <size key="customSize" width="100" height="100"/>
                                 <connections>
                                     <outlet property="AlbumImage" destination="dny-te-SEF" id="jBB-PK-Oxn"/>
-                                    <outlet property="CloseImage" destination="PLE-Ff-23P" id="8g2-Rx-aop"/>
+                                    <outlet property="CloseImage" destination="xKi-VF-E8h" id="Dk5-2W-La0"/>
                                     <segue destination="npt-vj-XHX" kind="show" id="f14-zx-lYj"/>
                                 </connections>
                             </collectionViewCell>
@@ -63,7 +66,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gp5-1d-VqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,7 +111,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="CPt-jr-lQ7"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <connections>
                         <outlet property="BannerImage" destination="t8t-IO-2UP" id="4Pg-rj-WlW"/>
                         <outlet property="ProfileImage" destination="wcm-T4-wQC" id="I59-T1-23J"/>
@@ -121,7 +130,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="J1r-Dr-tLM" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4">
+                        <size key="portraitSize" width="320" height="568"/>
+                        <size key="landscapeSize" width="568" height="320"/>
+                    </simulatedScreenMetrics>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uig-fg-IJW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
