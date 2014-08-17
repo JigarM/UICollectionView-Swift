@@ -19,8 +19,11 @@ Simple Tests of Swift Language (no Objective-C)
 ### App Previews
 ====================
 
-Hows Flow looks like ?
+Hows Flow looks like ?: 
+
+<p align="center">
 ![](http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif)
+</p>
 
 Appicon :
 
