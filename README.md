@@ -9,7 +9,6 @@ https://github.com/JigarM/Swift-Tutorials
 
 
 ## Simple Tests of Swift Language (no Objective-C)
-==================================================
 
 + Methods & Properties
 + Closure
@@ -21,10 +20,9 @@ https://github.com/JigarM/Swift-Tutorials
 + JSON string
 + Provide tag and Draw the Custom Cell
 
-App Previews
-====================
+## App Previews
 
-## Hows Flow looks like ?: 
+### Hows Flow looks like ?: 
 
 <p align="center">
 <a href="http://s1282.photobucket.com/user/jigarm_0809/media/CollectionView_zps59d7aedf.gif.html" target="_blank"><img src="http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif" border="0" alt=" photo CollectionView_zps59d7aedf.gif"/></a>
