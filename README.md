@@ -21,7 +21,7 @@ Simple Tests of Swift Language (no Objective-C)
 
 Appicon :
 
-![](http://i1282.photobucket.com/albums/a534/jigarm_0809/iOSSimulatorScreenShot15-Aug-201481655am_zps741fc965.png)
+![](http://i1282.photobucket.com/albums/a534/jigarm_0809/CollectionView_zps59d7aedf.gif)
 
 UICollectionView :
 
