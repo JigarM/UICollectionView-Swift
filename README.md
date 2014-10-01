@@ -51,9 +51,9 @@ for(AlbumCell *cell in self.collectionView.visibleCells)
 ```
 ### Swift
 ```swift
-for item: AnyObject in self.collectionView.visibleCells(){
-          var indexpath : NSIndexPath = self.collectionView.indexPathForCell(item as AlbumCell)
-          var cell : AlbumCell = self.collectionView.cellForItemAtIndexPath(indexpath) as AlbumCell
+for item in self.collectionView!.visibleCells() as [AlbumCell] {
+          var indexpath : NSIndexPath = self.collectionView!.indexPathForCell(item as AlbumCell)!
+          var cell : AlbumCell = self.collectionView!.cellForItemAtIndexPath(indexpath) as AlbumCell
           
           // Get Label
           var lbl : UILabel = cell.viewWithTag(101) as UILabel
