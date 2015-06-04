@@ -23,17 +23,17 @@ class AlbumViewController: UICollectionViewController {
             //Looping through CollectionView Cells in Swift
             //http://stackoverflow.com/questions/25490380/looping-through-collectionview-cells-in-swift
             
-            for item in self.collectionView!.visibleCells() as [AlbumCell] {
+            for item in self.collectionView!.visibleCells() as! [AlbumCell] {
                 
                 var indexpath : NSIndexPath = self.collectionView!.indexPathForCell(item as AlbumCell)!
-                var cell : AlbumCell = self.collectionView!.cellForItemAtIndexPath(indexpath) as AlbumCell
+                var cell : AlbumCell = self.collectionView!.cellForItemAtIndexPath(indexpath) as! AlbumCell
                 
                 //Profile Picture
                 //var img : UIImageView = cell.viewWithTag(100) as UIImageView
                 //img.image = UIImage(named: "q.png") as UIImage
                 
                 //Close Button
-                var close : UIButton = cell.viewWithTag(102) as UIButton
+                var close : UIButton = cell.viewWithTag(102) as! UIButton
                 close.hidden = false
             }
         } else {
@@ -91,7 +91,7 @@ class AlbumViewController: UICollectionViewController {
         //2.
         //You can create a Class file for UICollectionViewCell and Set the appropriate component and assign the value to that class
         
-        let cell : AlbumCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as AlbumCell
+        let cell : AlbumCell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell", forIndexPath: indexPath) as! AlbumCell
         cell.backgroundView = UIImageView(image: UIImage(named: "photo-frame.png")) as UIView
         cell.AlbumImage?.image = UIImage(named: Albums[indexPath.row])
         
@@ -110,7 +110,7 @@ class AlbumViewController: UICollectionViewController {
     }
     
     func deletePhoto(sender:UIButton) {
-        let i : Int = (sender.layer.valueForKey("index")) as Int
+        let i : Int = (sender.layer.valueForKey("index")) as! Int
         Albums.removeAtIndex(i)
         self.collectionView!.reloadData()
     }
